@@ -1,0 +1,1 @@
+angular.module('adminBase', ['angularUtils.directives.dirPagination', 'ui.bootstrap', 'summernote']);
