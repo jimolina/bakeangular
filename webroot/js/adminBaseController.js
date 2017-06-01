@@ -203,12 +203,18 @@
 			});
 		}
 
+	   	$scope.addRecord = function(id) {
+			$scope.resetFormNew();
+			$scope.titleAddEdit = 'Add';
+	   	}
+
 	   	$scope.viewRecord = function(id) {
 			$scope.rowsDetail = $scope.rows[id];
 	   	}
 
 		$scope.editRecord = function(page, recordId) {
 	      	angular.element('input.file').val('');
+			$scope.titleAddEdit = 'Edit';
 	   		$scope.myFile = '';
 			$scope.msnError = '';
 			$scope.notificationErrors = false;

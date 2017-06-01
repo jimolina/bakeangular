@@ -1,5 +1,5 @@
 <div class="col-4">
-    <a href="#" class="btn btn-success btn-sm pt-2" data-toggle="modal" data-target=".edit-record" ng-click="resetFormNew()">
+    <a href="#" class="btn btn-success btn-sm pt-2" data-toggle="modal" data-target=".edit-record" ng-click="addRecord()">
         <i class="icon-plus pr-1"></i> Add New
     </a>
 </div>
