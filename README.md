@@ -24,8 +24,6 @@ I'm using [Bootstrap 4 Alpha](https://github.com/twbs/bootstrap) just because I 
 
 ## Configuration Data Base
 
-05-30-2017: Now you can execute the Migration CakePHP command to create the MySql tables for this project.
-
 ```bash
 bin/cake migrations migrate
 ```
@@ -35,3 +33,9 @@ bin/cake migrations migrate
 The app skeleton uses a subset of [Bootstrap 4 Alpha](https://github.com/twbs/bootstrap) CSS
 framework by default. You can, however, replace it with any other library or
 custom styles.
+
+## TODO
+* ~~Execute the Migration CakePHP command to create the MySql tables~~
+* Integrate Browsersync component
+* Add a Setting config section
+* Add a way to select a different color set
