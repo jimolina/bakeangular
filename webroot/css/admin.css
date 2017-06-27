@@ -2,75 +2,61 @@
 @import url(https://fonts.googleapis.com/css?family=Syncopate);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700);
 @import url(http://fonts.googleapis.com/css?family=Khula:300,700);
-/* line 87, admin.less */
 body {
   color: #636c72;
   font-family: 'Khula';
   background-color: #e9ecf3;
   min-width: 992px;
 }
-/* line 94, admin.less */
 .animate-show,
 .animate-hide {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 99, admin.less */
 .animate-hide.ng-hide {
   opacity: 0;
   top: -100px;
   display: block !important;
 }
-/* line 105, admin.less */
 .animate-show.ng-show {
   opacity: 1;
   display: block !important;
 }
-/* line 110, admin.less */
 .note-popover.popover {
   display: none;
 }
-/* line 116, admin.less */
 .note-editor .modal-header button {
   display: none;
 }
-/* line 122, admin.less */
 .btn {
   cursor: pointer;
 }
-/* line 125, admin.less */
 .btn-outline-info.disabled,
 .btn-outline-info:disabled {
   color: #636c72;
   border-color: #636c72;
 }
-/* line 130, admin.less */
 .btn-primary {
   background-color: #578ebe;
   border-color: #578ebe;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 134, admin.less */
 .btn-primary:hover {
   background-color: #3598dc;
   border-color: #3598dc;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 141, admin.less */
 .pull-right {
   float: right;
 }
-/* line 145, admin.less */
 .calendar-group input {
   font-size: .875rem;
 }
-/* line 149, admin.less */
 .card-block.focused {
   background-color: #e9ecf3;
 }
-/* line 153, admin.less */
 input.ng-invalid,
 select.ng-invalid,
 textarea.ng-invalid,
@@ -78,44 +64,35 @@ textarea.ng-invalid,
   border-color: #a94442 !important;
   background-color: rgba(217, 83, 79, 0.1) !important;
 }
-/* line 158, admin.less */
 .uib-datepicker-popup {
   font-size: 13px !important;
 }
-/* line 160, admin.less */
 .uib-datepicker-popup .btn-sm,
 .uib-datepicker-popup .h6,
 .uib-datepicker-popup .text-muted {
   font-size: 11px !important;
 }
-/* line 163, admin.less */
 .uib-datepicker-popup .text-info {
   color: #ffffff !important;
 }
-/* line 168, admin.less */
 .hidden {
   display: none;
 }
-/* line 172, admin.less */
 a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-/* line 175, admin.less */
 a:hover {
   text-decoration: none;
   color: #578ebe;
 }
-/* line 181, admin.less */
 .trans {
   opacity: 0.5;
 }
-/* line 185, admin.less */
 label.card-title.required {
   padding-left: 10px;
 }
-/* line 187, admin.less */
 label.card-title.required::before {
   content: '*';
   width: 10px;
@@ -123,7 +100,6 @@ label.card-title.required::before {
   position: absolute;
   left: 12px;
 }
-/* line 196, admin.less */
 .message {
   position: relative;
   height: auto;
@@ -134,7 +110,6 @@ label.card-title.required::before {
   overflow: hidden;
   border-radius: 5px;
 }
-/* line 205, admin.less */
 .message::after {
   cursor: pointer;
   -webkit-writing-mode: vertical-lr;
@@ -150,39 +125,32 @@ label.card-title.required::before {
   right: 0;
   text-align: center;
 }
-/* line 220, admin.less */
 .error {
   color: #a94442;
   background-color: #f2dede;
   border-color: #f2dede;
 }
-/* line 226, admin.less */
 .error-txt {
   color: #a94442;
 }
-/* line 230, admin.less */
 .text-muted {
   color: #9eacb4 !important;
   font-size: 15px;
   font-family: Ubuntu;
 }
-/* line 236, admin.less */
 .breadcrumb {
   padding: 0;
   background-color: transparent;
   font-size: 14px;
 }
-/* line 240, admin.less */
 .breadcrumb .active {
   color: #bfcad1;
   cursor: default;
 }
-/* line 246, admin.less */
 .title-section {
   font-family: Play;
   margin-bottom: 20px;
 }
-/* line 251, admin.less */
 .login {
   max-width: 340px;
   width: 100%;
@@ -194,16 +162,13 @@ label.card-title.required::before {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
-/* line 260, admin.less */
 .login input {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 264, admin.less */
 .login button {
   width: 100%;
 }
-/* line 269, admin.less */
 .top-bar {
   background: #2f353b;
   border-bottom: 1px solid #3598dc;
@@ -215,48 +180,39 @@ label.card-title.required::before {
   min-width: 992px;
 }
 @media only screen and (max-width: 992px) {
-  /* line 274, admin.less */
   .top-bar {
     position: relative;
     top: 0;
   }
 }
-/* line 282, admin.less */
 .top-bar .title {
   line-height: 80px;
   margin-bottom: 0;
 }
 @media only screen and (max-width: 576px) {
-  /* line 285, admin.less */
   .top-bar .title {
     font-size: 1.6em;
   }
 }
-/* line 289, admin.less */
 .top-bar .nav {
   line-height: 80px;
 }
-/* line 292, admin.less */
 .top-bar a {
   color: #9eacb4;
 }
-/* line 294, admin.less */
 .top-bar a:hover {
   color: #3598dc;
 }
-/* line 300, admin.less */
 .page-wrapper {
   padding: 0 3px;
   margin-top: 90px;
   min-width: 992px;
 }
 @media print {
-  /* line 304, admin.less */
   .page-wrapper {
     margin-top: 0;
   }
 }
-/* line 309, admin.less */
 .page-footer {
   position: fixed;
   z-index: 10;
@@ -270,7 +226,6 @@ label.card-title.required::before {
   line-height: 23px;
   font-size: 12px;
 }
-/* line 323, admin.less */
 .menu-principal {
   width: 230px;
   background-color: #ffffff;
@@ -281,7 +236,6 @@ label.card-title.required::before {
   font-family: Ubuntu;
   letter-spacing: 0.03em;
 }
-/* line 332, admin.less */
 .menu-principal .menu {
   padding: 10px 0;
   top: 88px;
@@ -290,13 +244,11 @@ label.card-title.required::before {
   background-color: #ffffff;
 }
 @media only screen and (max-width: 992px) {
-  /* line 336, admin.less */
   .menu-principal .menu {
     position: relative;
     top: 0;
   }
 }
-/* line 342, admin.less */
 .menu-principal .menu .nav-link {
   margin-bottom: 1px;
   font-size: 15px;
@@ -304,21 +256,17 @@ label.card-title.required::before {
   color: #69789e;
   position: relative;
 }
-/* line 348, admin.less */
 .menu-principal .menu .nav-link:hover {
   background-color: #f2f6f9;
   color: #5c9acf;
 }
-/* line 353, admin.less */
 .menu-principal .menu .active,
 .menu-principal .menu .heading {
   color: #5c9acf;
 }
-/* line 356, admin.less */
 .menu-principal .menu .active {
   background-color: #f2f6f9;
 }
-/* line 358, admin.less */
 .menu-principal .menu .active::before {
   content: "";
   width: 4px;
@@ -328,21 +276,18 @@ label.card-title.required::before {
   left: -4px;
   top: 0;
 }
-/* line 368, admin.less */
 .menu-principal .menu .heading {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
   cursor: default;
 }
-/* line 374, admin.less */
 .menu-principal .menu i {
   margin-right: 2px;
   font-size: 1.1em;
   position: relative;
   top: 2px;
 }
-/* line 383, admin.less */
 .btn-calendar {
   margin: 0;
   font-size: 20px;
@@ -353,14 +298,12 @@ label.card-title.required::before {
   border: 0;
   padding: 4px 9px 2px 10px;
 }
-/* line 395, admin.less */
 .view-record .modal-header,
 .edit-record .modal-header,
 .edit-password .modal-header,
 .view-contact-home .modal-header {
   font-family: Play;
 }
-/* line 397, admin.less */
 .view-record .modal-header .modal-title,
 .edit-record .modal-header .modal-title,
 .edit-password .modal-header .modal-title,
@@ -369,7 +312,6 @@ label.card-title.required::before {
   text-align: center;
   font-family: 'Khula';
 }
-/* line 404, admin.less */
 .view-record .modal-body .card,
 .edit-record .modal-body .card,
 .edit-password .modal-body .card,
@@ -377,14 +319,12 @@ label.card-title.required::before {
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* line 407, admin.less */
 .view-record .modal-body .card .card-block,
 .edit-record .modal-body .card .card-block,
 .edit-password .modal-body .card .card-block,
 .view-contact-home .modal-body .card .card-block {
   padding: 12px 12px 2px 12px;
 }
-/* line 409, admin.less */
 .view-record .modal-body .card .card-block .card-title,
 .edit-record .modal-body .card .card-block .card-title,
 .edit-password .modal-body .card .card-block .card-title,
@@ -394,14 +334,12 @@ label.card-title.required::before {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 416, admin.less */
 .view-record .modal-body .card .card-block .data p:last-child,
 .edit-record .modal-body .card .card-block .data p:last-child,
 .edit-password .modal-body .card .card-block .data p:last-child,
 .view-contact-home .modal-body .card .card-block .data p:last-child {
   margin-bottom: 0;
 }
-/* line 420, admin.less */
 .view-record .modal-body .card .card-block .custom-file-control,
 .edit-record .modal-body .card .card-block .custom-file-control,
 .edit-password .modal-body .card .card-block .custom-file-control,
@@ -412,7 +350,6 @@ label.card-title.required::before {
   width: 92%;
   border: 0;
 }
-/* line 434, admin.less */
 .view-record .modal-body .card .form-control,
 .edit-record .modal-body .card .form-control,
 .edit-password .modal-body .card .form-control,
@@ -425,49 +362,41 @@ label.card-title.required::before {
   border-bottom: 1px solid black;
   margin-bottom: 13px;
 }
-/* line 442, admin.less */
 .view-record .modal-body .card .form-control[type="input"],
 .edit-record .modal-body .card .form-control[type="input"],
 .edit-password .modal-body .card .form-control[type="input"],
 .view-contact-home .modal-body .card .form-control[type="input"] {
   height: 25px;
 }
-/* line 450, admin.less */
 .content-wrapper {
   width: 100%;
   float: left;
 }
 @media only screen and (max-width: 992px) {
-  /* line 452, admin.less */
   .content-wrapper {
     width: 950px;
   }
 }
-/* line 458, admin.less */
 .content {
   margin-left: 230px;
   padding-left: 12px;
   padding-bottom: 6rem;
   padding-right: 0;
 }
-/* line 463, admin.less */
 .content .content-title {
   font-family: Play;
 }
 @media print {
-  /* line 466, admin.less */
   .content {
     margin-left: 0;
     padding-left: 0;
   }
-  /* line 469, admin.less */
   .content .content-title {
     font-family: Verdana;
     line-height: 14px;
     font-size: 20px;
   }
 }
-/* line 476, admin.less */
 .alert {
   position: absolute;
   right: 20px;
@@ -478,7 +407,6 @@ label.card-title.required::before {
   -webkit-box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.2);
 }
-/* line 485, admin.less */
 .alert-fix {
   position: initial;
   display: block;
@@ -487,38 +415,31 @@ label.card-title.required::before {
   padding: 10px;
   height: auto;
 }
-/* line 493, admin.less */
 .alert-dismissible .close {
   padding: 2px 6px;
   top: -15px;
   font-size: 18px;
   right: -17px;
 }
-/* line 499, admin.less */
 .has-error {
   background-color: #f2dede;
 }
-/* line 502, admin.less */
 .icard {
   margin-bottom: 10px;
   padding-right: 0;
 }
-/* line 506, admin.less */
 .icard-title {
   font-family: Ubuntu;
 }
-/* line 509, admin.less */
 .icard-block {
   background-color: #ffffff;
   padding: 10px;
   overflow: hidden;
   position: relative;
 }
-/* line 517, admin.less */
 .icard-list__simple .icard-item {
   border-bottom: 0;
 }
-/* line 522, admin.less */
 .icard-item {
   font-size: 14px;
   max-height: 80px;
@@ -527,25 +448,20 @@ label.card-title.required::before {
   border-bottom: 1px solid #e9ecf3;
   margin-bottom: 10px;
 }
-/* line 529, admin.less */
 .icard-item:firs-child {
   margin-top: 20px;
 }
-/* line 533, admin.less */
 .icard-item .icard-info__author {
   font-weight: bold;
 }
-/* line 535, admin.less */
 .icard-item .icard-info__author .badge {
   font-weight: normal;
   padding: 4px 13px 4px 10px;
 }
-/* line 540, admin.less */
 .icard-item .icard-info__desc {
   font-size: 13px;
   vertical-align: text-bottom;
 }
-/* line 544, admin.less */
 .icard-item .icard-info__icon {
   font-size: 18px;
   padding: 5px;
@@ -553,48 +469,39 @@ label.card-title.required::before {
   display: inline-block;
   margin-right: 4px;
 }
-/* line 552, admin.less */
 .icard-item .icard-datetime {
   font-size: 13px;
   text-align: right;
 }
-/* line 556, admin.less */
 .icard-item .icard-buttons {
   text-align: right;
 }
-/* line 560, admin.less */
 .icard-filter {
   margin-bottom: 20px;
 }
-/* line 562, admin.less */
 .icard-filter .card-header {
   padding-top: 18px;
   padding-bottom: 0;
   background-color: #ffffff;
 }
-/* line 566, admin.less */
 .icard-filter .card-header .caption {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 19px;
   letter-spacing: 0.1em;
 }
-/* line 572, admin.less */
 .icard-filter .card-header .nav-tabs {
   border: 0;
 }
-/* line 574, admin.less */
 .icard-filter .card-header .nav-tabs .nav-link,
 .icard-filter .card-header .nav-tabs .nav-link:hover {
   border-width: 0 0 3px;
 }
-/* line 577, admin.less */
 .icard-filter .card-header .nav-tabs .active {
   background: 0 0;
   border-bottom: 3px solid #3598dc;
   position: relative;
 }
-/* line 582, admin.less */
 .icard-filter .card-header .nav-tabs a {
   padding: 0 13px 13px;
   font-size: 13px;
@@ -604,48 +511,38 @@ label.card-title.required::before {
   -webkit-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
 }
-/* line 595, admin.less */
 .btn-action {
   color: #32c5d2 !important;
   background-color: #ffffff !important;
 }
-/* line 598, admin.less */
 .btn-action:hover {
   color: #5c9acf !important;
 }
-/* line 604, admin.less */
 .data-grid-container {
   padding: 0;
 }
-/* line 606, admin.less */
 .data-grid-container i[class*="icon-"] {
   font-weight: bold;
 }
-/* line 609, admin.less */
 .data-grid-container .btn-group {
   background-color: #ffffff;
 }
-/* line 611, admin.less */
 .data-grid-container .btn-group__simple {
   border-radius: .2rem;
 }
-/* line 613, admin.less */
 .data-grid-container .btn-group__simple a {
   border-bottom-right-radius: inherit !important;
   border-top-right-radius: inherit !important;
 }
-/* line 618, admin.less */
 .data-grid-container .btn-group .dropdown-menu {
   font-size: 13px;
   right: 0;
   left: inherit;
 }
-/* line 622, admin.less */
 .data-grid-container .btn-group .dropdown-menu .dropdown-item {
   padding: 3px 1rem;
   color: #636c72;
 }
-/* line 628, admin.less */
 .data-grid-container .card-header {
   background-color: #5c9acf;
   padding: .55rem 1.25rem;
@@ -654,102 +551,83 @@ label.card-title.required::before {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 634, admin.less */
 .data-grid-container .card-header i[class*="icon-"] {
   vertical-align: middle;
 }
-/* line 638, admin.less */
 .data-grid-container .card-block {
   padding-top: 0;
 }
 @media print {
-  /* line 642, admin.less */
   .data-grid-container .card-block {
     padding: 0;
     margin: 0;
   }
 }
-/* line 647, admin.less */
 .data-grid-container .filter-container {
   border-top: 0;
 }
-/* line 649, admin.less */
 .data-grid-container .filter-container .card {
   border-radius: 0 0 5px 5px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   padding-top: 20px;
 }
-/* line 654, admin.less */
 .data-grid-container .filter-container label {
   margin-right: 5px;
   font-size: 12px;
 }
-/* line 658, admin.less */
 .data-grid-container .filter-container input,
 .data-grid-container .filter-container select {
   margin-right: 15px;
 }
-/* line 662, admin.less */
 .data-grid-container .data-grid {
   margin-top: 1.25rem;
   font-size: 14px;
   max-height: 800px;
 }
 @media print {
-  /* line 666, admin.less */
   .data-grid-container .data-grid {
     margin-top: 0;
     max-height: 4000px;
   }
 }
-/* line 671, admin.less */
 .data-grid-container .data-grid table .thead-default th {
   color: #636c72;
   background-color: #ffffff;
   line-height: 26px;
   position: relative;
 }
-/* line 676, admin.less */
 .data-grid-container .data-grid table .thead-default th a {
   display: block;
   color: #636c72;
 }
-/* line 680, admin.less */
 .data-grid-container .data-grid table .thead-default th.header-action {
   width: 160px;
 }
-/* line 685, admin.less */
 .data-grid-container .data-grid table tr.has-error {
   background-color: #f2dede;
 }
-/* line 689, admin.less */
 .data-grid-container .data-grid table td {
   text-align: left;
   max-width: 400px;
   min-width: 40px;
   padding: 5px;
 }
-/* line 694, admin.less */
 .data-grid-container .data-grid table td.has-error,
 .data-grid-container .data-grid table td .has-error {
   color: #a94442;
 }
-/* line 697, admin.less */
 .data-grid-container .data-grid table td.icon-action {
   text-align: center;
 }
-/* line 699, admin.less */
 .data-grid-container .data-grid table td.icon-action a.btn {
   padding: .36rem .5rem;
   font-weight: normal;
 }
-/* line 702, admin.less */
 .data-grid-container .data-grid table td.icon-action a.btn i {
   margin-top: 2px;
   display: block;
 }
-/* line 711, admin.less */
 .data-grid-container .data-grid .icon-order::before {
   color: #bfcad1;
   font-size: 9px;
@@ -759,7 +637,6 @@ label.card-title.required::before {
   top: 1px;
   right: 7px;
 }
-/* line 720, admin.less */
 .data-grid-container .data-grid .icon-order::after {
   color: #bfcad1;
   font-size: 9px;
@@ -769,56 +646,43 @@ label.card-title.required::before {
   top: 9px;
   right: 7px;
 }
-/* line 730, admin.less */
 .data-grid-container .data-grid .icon-order__desc::before {
   color: #636c72;
 }
-/* line 733, admin.less */
 .data-grid-container .data-grid .icon-order__desc::after {
   content: '';
 }
-/* line 738, admin.less */
 .data-grid-container .data-grid .icon-order__asc::before {
   content: '';
 }
-/* line 741, admin.less */
 .data-grid-container .data-grid .icon-order__asc::after {
   color: #636c72;
 }
-/* line 747, admin.less */
 .data-grid-container .card-footer {
   font-size: 12px;
   line-height: 25px;
 }
-/* line 750, admin.less */
 .data-grid-container .card-footer .pagination-sm .page-link {
   font-size: 12px;
 }
-/* line 752, admin.less */
 .data-grid-container .card-footer .pagination-sm .page-link i {
   font-size: 8px;
 }
-/* line 760, admin.less */
 #home .rapid-view {
   margin-bottom: 10px;
 }
-/* line 763, admin.less */
 #home .rapid-view .icard-title__articles {
   color: #32c5d2;
 }
-/* line 766, admin.less */
 #home .rapid-view .icard-title__jobs {
   color: #f36a5a;
 }
-/* line 769, admin.less */
 #home .rapid-view .icard-title__suscribers {
   color: #5c9acf;
 }
-/* line 772, admin.less */
 #home .rapid-view .icard-title__contact {
   color: #746590;
 }
-/* line 777, admin.less */
 #home .rapid-view .icard-block i {
   position: absolute;
   top: -16px;
@@ -826,44 +690,35 @@ label.card-title.required::before {
   font-size: 4em;
   color: #e9ecf3;
 }
-/* line 785, admin.less */
 #home .rapid-view .card-footer {
   padding: 2px;
 }
-/* line 789, admin.less */
 #home .rapid-view .icard-footer__articles {
   background-color: #32c5d2;
 }
-/* line 792, admin.less */
 #home .rapid-view .icard-footer__jobs {
   background-color: #f36a5a;
 }
-/* line 795, admin.less */
 #home .rapid-view .icard-footer__suscribers {
   background-color: #5c9acf;
 }
-/* line 798, admin.less */
 #home .rapid-view .icard-footer__contact {
   background-color: #746590;
 }
-/* line 804, admin.less */
 #home .home-grid .text-muted {
   font-size: 12px;
   text-transform: none;
 }
-/* line 808, admin.less */
 #home .home-grid .icard-block {
   height: 317px;
   overflow-y: auto;
 }
-/* line 816, admin.less */
 .spinner {
   width: 60px;
   height: 60px;
   position: relative;
   margin: 100px auto;
 }
-/* line 823, admin.less */
 .double-bounce1,
 .double-bounce2 {
   width: 100%;
@@ -877,30 +732,25 @@ label.card-title.required::before {
   -webkit-animation: sk-bounce 2s infinite ease-in-out;
   animation: sk-bounce 2s infinite ease-in-out;
 }
-/* line 836, admin.less */
 .double-bounce2 {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
 @-webkit-keyframes sk-bounce {
-  /* line 842, admin.less */
   0%,
   100% {
     -webkit-transform: scale(0);
   }
-  /* line 843, admin.less */
   50% {
     -webkit-transform: scale(1);
   }
 }
 @keyframes sk-bounce {
-  /* line 847, admin.less */
   0%,
   100% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
-  /* line 850, admin.less */
   50% {
     transform: scale(1);
     -webkit-transform: scale(1);
