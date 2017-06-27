@@ -27,6 +27,20 @@ I'm using [Bootstrap 4 Alpha](https://github.com/twbs/bootstrap) just because I 
 ```bash
 bin/cake migrations migrate
 ```
+##How to use Browsersync
+
+You will need install browsersync and gulp: 
+
+```bash
+$ npm install browser-sync gulp --save-dev
+```
+After that, just execute the command:
+
+```bash
+$ gulp
+```
+
+That will be execute the file gulpfile.js and then everytime you change a CSS file, the browsersync will be make the magic!
 
 ## Layout
 
@@ -36,6 +50,6 @@ custom styles.
 
 ## TODO
 * ~~Execute the Migration CakePHP command to create the MySql tables~~
-* Integrate Browsersync component
+* ~~Integrate Browsersync component~~
 * Add a Setting config section
 * Add a way to select a different color set
