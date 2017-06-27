@@ -27,7 +27,7 @@ I'm using [Bootstrap 4 Alpha](https://github.com/twbs/bootstrap) just because I 
 ```bash
 bin/cake migrations migrate
 ```
-##How to use Browsersync
+## How to use Browsersync
 
 You will need install browsersync and gulp: 
 
