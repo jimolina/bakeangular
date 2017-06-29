@@ -1,0 +1,90 @@
+/**
+ * General Colors
+ */
+
+@color-white: #fff;
+@color-black: #000;
+@color-transparent: transparent;
+@color-transparent-gray: rgba(93,94,95,.6);
+@color-transparent-white: rgba(255,255,255,.8);
+@color-transparent-blue: rgba(32, 135, 189,.6);
+@color-transparent-red: rgba(217, 83, 79, 0.1);
+@color-blue: #3598DC;
+@color-blue-dark: #2F353B;
+@color-blue-light: #3598dc;
+@color-blue-soft: #578EBE;
+@color-gray: #636c72;
+@color-gray-light: #BFCAD1;
+@color-gray-medium: #9eacb4;
+@color-green: #32C5D2;
+@color-green-hard: #449D44;
+@color-red-dark: #a94442;
+@color-red-soft: #F69B9B;
+@color-red-light: #f2dede;
+@color-purple: #746590;
+@color-orange: #F36A5A;
+@color-yellow: #F1C40F;
+@color-gray-soft: #E9ECF3;
+
+/**
+ * Set color: Default
+ */
+@color-blue-sky: #5C9ACF;
+@color-blue-tone: #F2F6F9;
+@color-purple-soft: #69789E;
+
+/**
+ * Set color: Orange
+ */
+@color-orange-sky: #FF8202;
+@color-orange-tone: #FFD5AA;
+@color-orange-soft: #B35A00;
+@color-orange-bg: rgba(255,213,170,0.3);
+
+/**
+ * Set color: Green
+ */
+@color-green-sky: #6DA835;
+@color-green-tone: #DAF7BF;
+@color-green-soft: #112200;
+@color-green-bg: rgba(218,247,191,0.3);
+
+
+.color-set {
+    margin: 14px;
+    &__default {
+        &__list1 {
+            background-color: @color-blue-sky;
+        }
+        &__list2 {
+            background-color: @color-purple-soft;
+        }
+        &__list3 {
+            background-color: @color-blue-tone;
+        }
+    }
+
+    &__orange {
+        &__list1 {
+            background-color: @color-orange-sky;
+        }
+        &__list2 {
+            background-color: @color-orange-soft;
+        }
+        &__list3 {
+            background-color: @color-orange-tone;
+        }
+    }
+
+    &__green {
+        &__list1 {
+            background-color: @color-green-sky;
+        }
+        &__list2 {
+            background-color: @color-green-soft;
+        }
+        &__list3 {
+            background-color: @color-green-tone;
+        }
+    }
+}

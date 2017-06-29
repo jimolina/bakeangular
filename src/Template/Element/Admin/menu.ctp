@@ -46,6 +46,10 @@
             <i class="icon-camera"></i> Images
         </a> -->
         <a href="#" class="nav-link heading">Config</a>
+        <a href="<?php echo $this->Url->build(array('controller'=>'color_set','action'=>'index')) ?>" 
+            class="nav-link <? echo ($this->request->controller === 'ColorSet') ? 'active' : '' ; ?>">
+            <i class="icon-drop"></i> Color Set
+        </a>
         <a href="<?php echo $this->Url->build(array('controller'=>'parameters','action'=>'index')) ?>" 
             class="nav-link <? echo ($this->request->controller === 'Parameters') ? 'active' : '' ; ?>">
             <i class="icon-settings"></i> Parameters

@@ -4,6 +4,7 @@
 		$scope.pageSize = 20;
 		$scope.currentPage = 1;
 		$scope.loading = true;
+		$scope.loadingPage = true;
 		$scope.notification = false;
 		$scope.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
 		$scope.phoneFormat = /^\+?\d{1,2}[- ]?\d{3}[- ]?\d{7}$/;
@@ -13,6 +14,15 @@
 		$scope.filterContact = 'today';
 		$scope.filterFeed = 'system';
 		
+		$scope.colorSet = function(value) {
+			$scope.layout = value;
+
+			$timeout(function () { 
+				$scope.loadingPage = false;
+				angular.element('.general-container').attr('style','display: block');
+			}, 1200);  
+		}
+
 		$scope.summerOptions = {
 		    height: 300,
 		    airMode: false,
@@ -131,7 +141,6 @@
 	   	}
 
 		$scope.viewContactHome = function(id) {
-			console.log("HERE2: ", $scope.contactHlist[id]);
 			$scope.rowsDetail = $scope.contactHlist[id];
 		}
 
@@ -222,7 +231,6 @@
 			dataRecord.getDetail(page, recordId).then(function(data){
 				$scope.rowsEdit = data.data.dataDetail[0];
 				$scope.setDateEdit(page);
-				// $scope.setStatusEdit(page);
 			});
 	   	}
 
@@ -288,7 +296,7 @@
 		$scope.savePassword = function(page, recordId) {
 			if ($scope.formEditPassword.$valid) {
 
-				saveRecord.save(page, recordId, $scope.rowsEdit, $scope.myFile).then(function(data){
+				saveRecord.save(page, recordId, $scope.rowsEdit, $scope.myFile).then(function(data){					
 					$scope.msn = data.data.msn;
 
 					$scope.notification = true;
@@ -308,6 +316,38 @@
 				}).finally(function() {
 					// called no matter success or failure
 					angular.element('#EditPasswordModal').modal('hide');
+				});
+	    	}
+		}
+
+		$scope.saveColorSet = function(colorSetValue, id) {
+			if (colorSetValue != '') {
+				var rowsEdit = { value: colorSetValue, idRecord: id };
+
+				saveRecord.save('color_set', '', rowsEdit, $scope.myFile).then(function(data){
+					// $scope.colorSet('colorSetValue');
+					if (data.data.msn.type === 'success') {
+						$scope.layout = colorSetValue;
+					}
+
+					$scope.msn = data.data.msn;
+
+					$scope.notification = true;
+
+					$timeout(function () { 
+						$scope.notification = false;
+					}, 3000);  
+				}, function ( response ) {
+					$scope.msn.type = 'danger';
+					$scope.msn.content = 'The Color Set could not be saved. Please, check the field and try again.';
+
+					$scope.notification = true;
+
+					$timeout(function () { 
+						$scope.notification = false;
+					}, 10000);  
+				}).finally(function() {
+					// called no matter success or failure
 				});
 	    	}
 		}
@@ -357,7 +397,6 @@
 				var request = new XMLHttpRequest();
 				request.open('HEAD', url, false);
 				request.send();
-				console.log("HERE: ", request.status)
 
 				if(request.status == 200) {
 					img = '<img src="../upload/img/' + data + '" class="img-thumbnail">';
