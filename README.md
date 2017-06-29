@@ -51,5 +51,6 @@ custom styles.
 ## TODO
 * ~~Execute the Migration CakePHP command to create the MySql tables~~
 * ~~Integrate Browsersync component~~
-* Add a Setting config section
-* Add a way to select a different color set
+* ~~IAdd a Setting config section~~I
+* ~~IAdd a way to select a different color set~~I
+* Add a new section for Image Galleries
