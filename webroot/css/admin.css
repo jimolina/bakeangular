@@ -3,9 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700);
 @import url(http://fonts.googleapis.com/css?family=Khula:300,700);
 body {
-  color: #636c72;
   font-family: 'Khula';
-  background-color: #e9ecf3;
   min-width: 992px;
 }
 .animate-show,
@@ -31,20 +29,11 @@ body {
 .btn {
   cursor: pointer;
 }
-.btn-outline-info.disabled,
-.btn-outline-info:disabled {
-  color: #636c72;
-  border-color: #636c72;
-}
 .btn-primary {
-  background-color: #578ebe;
-  border-color: #578ebe;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: #3598dc;
-  border-color: #3598dc;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -54,16 +43,6 @@ body {
 .calendar-group input {
   font-size: .875rem;
 }
-.card-block.focused {
-  background-color: #e9ecf3;
-}
-input.ng-invalid,
-select.ng-invalid,
-textarea.ng-invalid,
-.summernote.ng-invalid .note-editable.panel-body {
-  border-color: #a94442 !important;
-  background-color: rgba(217, 83, 79, 0.1) !important;
-}
 .uib-datepicker-popup {
   font-size: 13px !important;
 }
@@ -71,9 +50,6 @@ textarea.ng-invalid,
 .uib-datepicker-popup .h6,
 .uib-datepicker-popup .text-muted {
   font-size: 11px !important;
-}
-.uib-datepicker-popup .text-info {
-  color: #ffffff !important;
 }
 .hidden {
   display: none;
@@ -85,7 +61,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #578ebe;
 }
 .trans {
   opacity: 0.5;
@@ -115,8 +90,6 @@ label.card-title.required::before {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  background-color: #f69b9b;
-  color: #ffffff;
   content: "close x";
   width: 17px;
   height: 100%;
@@ -125,26 +98,15 @@ label.card-title.required::before {
   right: 0;
   text-align: center;
 }
-.error {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #f2dede;
-}
-.error-txt {
-  color: #a94442;
-}
 .text-muted {
-  color: #9eacb4 !important;
   font-size: 15px;
   font-family: Ubuntu;
 }
 .breadcrumb {
   padding: 0;
-  background-color: transparent;
   font-size: 14px;
 }
 .breadcrumb .active {
-  color: #bfcad1;
   cursor: default;
 }
 .title-section {
@@ -156,8 +118,6 @@ label.card-title.required::before {
   width: 100%;
   padding: 19px 29px 29px;
   margin: 60px auto 20px;
-  background-color: #ffffff;
-  border: 1px solid #2f353b;
   border-radius: 5px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -170,8 +130,6 @@ label.card-title.required::before {
   width: 100%;
 }
 .top-bar {
-  background: #2f353b;
-  border-bottom: 1px solid #3598dc;
   height: 70px;
   position: fixed;
   width: 100%;
@@ -197,12 +155,6 @@ label.card-title.required::before {
 .top-bar .nav {
   line-height: 80px;
 }
-.top-bar a {
-  color: #9eacb4;
-}
-.top-bar a:hover {
-  color: #3598dc;
-}
 .page-wrapper {
   padding: 0 3px;
   margin-top: 90px;
@@ -220,15 +172,12 @@ label.card-title.required::before {
   bottom: 0px;
   height: 40px;
   width: 100%;
-  background: #bfcad1;
-  color: #69789e;
   padding: 8px;
   line-height: 23px;
   font-size: 12px;
 }
 .menu-principal {
   width: 230px;
-  background-color: #ffffff;
   float: left;
   display: block;
   position: relative;
@@ -241,7 +190,6 @@ label.card-title.required::before {
   top: 88px;
   position: fixed;
   width: 230px;
-  background-color: #ffffff;
 }
 @media only screen and (max-width: 992px) {
   .menu-principal .menu {
@@ -253,25 +201,12 @@ label.card-title.required::before {
   margin-bottom: 1px;
   font-size: 15px;
   padding: .7em 1.2em;
-  color: #69789e;
   position: relative;
-}
-.menu-principal .menu .nav-link:hover {
-  background-color: #f2f6f9;
-  color: #5c9acf;
-}
-.menu-principal .menu .active,
-.menu-principal .menu .heading {
-  color: #5c9acf;
-}
-.menu-principal .menu .active {
-  background-color: #f2f6f9;
 }
 .menu-principal .menu .active::before {
   content: "";
   width: 4px;
   height: 42px;
-  background-color: #5c9acf;
   position: absolute;
   left: -4px;
   top: 0;
@@ -421,9 +356,6 @@ label.card-title.required::before {
   font-size: 18px;
   right: -17px;
 }
-.has-error {
-  background-color: #f2dede;
-}
 .icard {
   margin-bottom: 10px;
   padding-right: 0;
@@ -432,7 +364,6 @@ label.card-title.required::before {
   font-family: Ubuntu;
 }
 .icard-block {
-  background-color: #ffffff;
   padding: 10px;
   overflow: hidden;
   position: relative;
@@ -445,7 +376,6 @@ label.card-title.required::before {
   max-height: 80px;
   overflow: hidden;
   font-family: Ubuntu;
-  border-bottom: 1px solid #e9ecf3;
   margin-bottom: 10px;
 }
 .icard-item:firs-child {
@@ -465,7 +395,6 @@ label.card-title.required::before {
 .icard-item .icard-info__icon {
   font-size: 18px;
   padding: 5px;
-  color: #636c72;
   display: inline-block;
   margin-right: 4px;
 }
@@ -482,7 +411,6 @@ label.card-title.required::before {
 .icard-filter .card-header {
   padding-top: 18px;
   padding-bottom: 0;
-  background-color: #ffffff;
 }
 .icard-filter .card-header .caption {
   text-transform: uppercase;
@@ -499,33 +427,21 @@ label.card-title.required::before {
 }
 .icard-filter .card-header .nav-tabs .active {
   background: 0 0;
-  border-bottom: 3px solid #3598dc;
   position: relative;
 }
 .icard-filter .card-header .nav-tabs a {
   padding: 0 13px 13px;
   font-size: 13px;
   display: block;
-  color: #636c72;
   text-decoration: none;
   -webkit-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
-}
-.btn-action {
-  color: #32c5d2 !important;
-  background-color: #ffffff !important;
-}
-.btn-action:hover {
-  color: #5c9acf !important;
 }
 .data-grid-container {
   padding: 0;
 }
 .data-grid-container i[class*="icon-"] {
   font-weight: bold;
-}
-.data-grid-container .btn-group {
-  background-color: #ffffff;
 }
 .data-grid-container .btn-group__simple {
   border-radius: .2rem;
@@ -541,12 +457,9 @@ label.card-title.required::before {
 }
 .data-grid-container .btn-group .dropdown-menu .dropdown-item {
   padding: 3px 1rem;
-  color: #636c72;
 }
 .data-grid-container .card-header {
-  background-color: #5c9acf;
   padding: .55rem 1.25rem;
-  color: #ffffff;
   margin: 0;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -592,30 +505,20 @@ label.card-title.required::before {
   }
 }
 .data-grid-container .data-grid table .thead-default th {
-  color: #636c72;
-  background-color: #ffffff;
   line-height: 26px;
   position: relative;
 }
 .data-grid-container .data-grid table .thead-default th a {
   display: block;
-  color: #636c72;
 }
 .data-grid-container .data-grid table .thead-default th.header-action {
   width: 160px;
-}
-.data-grid-container .data-grid table tr.has-error {
-  background-color: #f2dede;
 }
 .data-grid-container .data-grid table td {
   text-align: left;
   max-width: 400px;
   min-width: 40px;
   padding: 5px;
-}
-.data-grid-container .data-grid table td.has-error,
-.data-grid-container .data-grid table td .has-error {
-  color: #a94442;
 }
 .data-grid-container .data-grid table td.icon-action {
   text-align: center;
@@ -629,7 +532,6 @@ label.card-title.required::before {
   display: block;
 }
 .data-grid-container .data-grid .icon-order::before {
-  color: #bfcad1;
   font-size: 9px;
   font-family: 'simple-line-icons';
   content: '\e607';
@@ -638,7 +540,6 @@ label.card-title.required::before {
   right: 7px;
 }
 .data-grid-container .data-grid .icon-order::after {
-  color: #bfcad1;
   font-size: 9px;
   font-family: 'simple-line-icons';
   content: '\e604';
@@ -646,17 +547,11 @@ label.card-title.required::before {
   top: 9px;
   right: 7px;
 }
-.data-grid-container .data-grid .icon-order__desc::before {
-  color: #636c72;
-}
 .data-grid-container .data-grid .icon-order__desc::after {
   content: '';
 }
 .data-grid-container .data-grid .icon-order__asc::before {
   content: '';
-}
-.data-grid-container .data-grid .icon-order__asc::after {
-  color: #636c72;
 }
 .data-grid-container .card-footer {
   font-size: 12px;
@@ -671,39 +566,14 @@ label.card-title.required::before {
 #home .rapid-view {
   margin-bottom: 10px;
 }
-#home .rapid-view .icard-title__articles {
-  color: #32c5d2;
-}
-#home .rapid-view .icard-title__jobs {
-  color: #f36a5a;
-}
-#home .rapid-view .icard-title__suscribers {
-  color: #5c9acf;
-}
-#home .rapid-view .icard-title__contact {
-  color: #746590;
-}
 #home .rapid-view .icard-block i {
   position: absolute;
   top: -16px;
   right: -9px;
   font-size: 4em;
-  color: #e9ecf3;
 }
 #home .rapid-view .card-footer {
   padding: 2px;
-}
-#home .rapid-view .icard-footer__articles {
-  background-color: #32c5d2;
-}
-#home .rapid-view .icard-footer__jobs {
-  background-color: #f36a5a;
-}
-#home .rapid-view .icard-footer__suscribers {
-  background-color: #5c9acf;
-}
-#home .rapid-view .icard-footer__contact {
-  background-color: #746590;
 }
 #home .home-grid .text-muted {
   font-size: 12px;
@@ -724,7 +594,6 @@ label.card-title.required::before {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #3598dc;
   opacity: 0.6;
   position: absolute;
   top: 0;

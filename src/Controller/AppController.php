@@ -59,6 +59,7 @@ class AppController extends Controller
 
             // 'authError' => '',
         ]);
+        // unset($_SESSION["colorSet"]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -102,5 +103,23 @@ class AppController extends Controller
         $this->Auth->allow(['display']);
         $this->Auth->config('authError', false);
         $this->set('loginUserName', $this->Auth->user("first_name") . " " . $this->Auth->user("last_name"));
+        $colorSetId = '';
+        $colorSetVal = 'default';
+
+        if ($this->request->session()->read('Auth')) {
+            if ( !isset($_SESSION["colorSet"]) ) {
+                $this->loadModel('ColorSet');
+                $colorSet = $this->ColorSet->getRecordByUser($this->Auth->user("id"));
+
+                foreach ($colorSet as $row) {
+                    $colorSetId = $row['id'];
+                    $colorSetVal = $row['value'];
+                }
+
+                $_SESSION["colorSet"] = ["colorSetId" => $colorSetId, "colorSet" => $colorSetVal];
+            }
+
+            $this->set('colorSet', $_SESSION["colorSet"]);
+        }
     }
 }

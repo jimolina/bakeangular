@@ -1,42 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Play:700);
-@import url(https://fonts.googleapis.com/css?family=Syncopate);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700);
-@import url(http://fonts.googleapis.com/css?family=Khula:300,700);
-
-@color-white: #fff;
-@color-black: #000;
-@color-blue: #3598DC;
-@color-blue-dark: #2F353B;
-@color-blue-light: #3598dc;
-@color-blue-soft: #578EBE;
-@color-blue-tone: #F2F6F9;
-@color-blue-sky: #5C9ACF;
-@color-gray: #636c72;
-@color-gray-light: #BFCAD1;
-@color-gray-medium: #9eacb4;
-@color-gray-soft: #E9ECF3;
-@color-green: #32C5D2;
-@color-green-hard: #449D44;
-@color-red-dark: #a94442;
-@color-red-soft: #F69B9B;
-@color-red-light: #f2dede;
-@color-purple: #746590;
-@color-purple-soft: #69789E;
-@color-orange: #F36A5A;
-@color-yellow: #F1C40F;
-@color-transparent: transparent;
-@color-transparent-gray: rgba(93,94,95,.6);
-@color-transparent-white: rgba(255,255,255,.8);
-@color-transparent-blue: rgba(32, 135, 189,.6);
-@color-transparent-red: rgba(217, 83, 79, 0.1);
-
-@font-Play: Play;
-@font-Syncopate: Syncopate;
-@font-Ubuntu: Ubuntu;
-@font-Verdana: Verdana;
-@font-Helvetica: 'Helvetica Neue';
-@font-Khula: 'Khula';
-@font-Icons: 'simple-line-icons';
+@import "_fonts";
+@import "_mixins";
 
 @extra-larga-screen: ~"only screen and (max-width: 1200px)";
 @larga-screen: ~"only screen and (max-width: 992px)";
@@ -46,48 +9,8 @@
 @min-width: 992px;
 @width-menu-principal: 230px;
 
-.rounded-corners (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	border-radius: @radius;
-}
-
-.rounded-corners-top (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	border-radius: @radius @radius 0 0;
-}
-
-.rounded-corners-bottom (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	border-radius: 0 0 @radius @radius;
-}
-
-.box-shadow(@shadow) {
-	-webkit-box-shadow: @shadow;
-	-moz-box-shadow: @shadow;
-	box-shadow: @shadow;
-}
-
-.transition(@time: .5s) {
-	-webkit-transition: all @time ease-in-out;
-	-moz-transition:    all @time ease-in-out;
-	-o-transition:      all @time ease-in-out;
-	-ms-transition:     all @time ease-in-out;
-	transition:         all @time ease-in-out; 
-}
-
 body {
-    color: @color-gray;
     font-family: @font-Khula;
-    background-color: @color-gray-soft;
     min-width: @min-width;
 }
 
@@ -122,18 +45,10 @@ body {
 .btn {
 	cursor: pointer;
 }
-.btn-outline-info.disabled, .btn-outline-info:disabled {
-	color: @color-gray;
-	border-color: @color-gray;
-}
 
 .btn-primary{
-    background-color: @color-blue-soft;
-    border-color: @color-blue-soft;
     .transition(.3s);
     &:hover{
-    	background-color: @color-blue-light;
-    	border-color: @color-blue-light;
     	.box-shadow(0 3px 5px rgba(0,0,0,.2));
     }
 }
@@ -146,23 +61,11 @@ body {
     font-size: .875rem;
 }
 
-.card-block.focused {
-	background-color:  @color-gray-soft;
-}
-
-input.ng-invalid, select.ng-invalid, textarea.ng-invalid, .summernote.ng-invalid .note-editable.panel-body{
-	border-color: @color-red-dark !important;
-	background-color: @color-transparent-red !important;
-}
-
 .uib-datepicker-popup {
     font-size: 13px !important;
     .btn-sm, .h6, .text-muted {
     	font-size: 11px !important;
     }
-    .text-info {
-	    color: @color-white !important;
-	}
 }
 
 .hidden{
@@ -174,7 +77,6 @@ a {
     cursor: pointer;    
 	&:hover {
 		text-decoration: none;
-		color: @color-blue-soft;
 	}
 }
 
@@ -205,8 +107,6 @@ label.card-title.required {
     &::after{
 		cursor: pointer;
     	writing-mode: vertical-lr;
-		background-color: @color-red-soft;
-		color: @color-white;
     	content: "close x";
     	width: 17px;
     	height: 100%;
@@ -217,28 +117,15 @@ label.card-title.required {
     }
 }
 
-.error{
-    color: @color-red-dark;
-    background-color: @color-red-light;
-    border-color: @color-red-light;
-}
-
-.error-txt {
-    color: @color-red-dark;
-}
-
 .text-muted{
-	color: @color-gray-medium !important;
 	font-size: 15px;
 	font-family: @font-Ubuntu;
 }
 
 .breadcrumb{
 	padding: 0;
-	background-color: transparent;
 	font-size: 14px;
 	.active{
-		color: @color-gray-light;
 		cursor: default;
 	}
 }
@@ -253,8 +140,6 @@ label.card-title.required {
 	width: 100%;
 	padding: 19px 29px 29px;
     margin: 60px auto 20px;
-    background-color: @color-white;
-    border: 1px solid @color-blue-dark;
     .rounded-corners;
     .box-shadow(0 3px 5px rgba(0,0,0,.5));
     input{
@@ -267,8 +152,6 @@ label.card-title.required {
 }
 
 .top-bar{
-    background: @color-blue-dark;
-    border-bottom: 1px solid @color-blue-light;
     height: 70px;
     position: fixed;
 	    @media @larga-screen{
@@ -289,12 +172,6 @@ label.card-title.required {
     .nav{
     	line-height: 80px;
     }
-    a{
-    	color: @color-gray-medium;
-    	&:hover {
-			color: @color-blue;
-		}
-    }
 }
 
 .page-wrapper{
@@ -313,8 +190,6 @@ label.card-title.required {
 	bottom:0px;
 	height:40px;
 	width:100%;
-	background: @color-gray-light;
-	color: @color-purple-soft;
 	padding: 8px;
 	line-height: 23px;
 	font-size: 12px;
@@ -322,7 +197,6 @@ label.card-title.required {
 
 .menu-principal {
 	width: @width-menu-principal;
-	background-color: @color-white;
 	float: left;
 	display: block;
 	position: relative;
@@ -338,28 +212,17 @@ label.card-title.required {
 			top: 0;
 		}
 	    width: @width-menu-principal;
-	    background-color: @color-white;
 	    .nav-link {
 	    	margin-bottom: 1px;
 	    	font-size: 15px;
 	    	padding: .7em 1.2em;
-	    	color: @color-purple-soft;
 	    	position: relative;
-	    	&:hover{
-				background-color: @color-blue-tone;
-				color: @color-blue-sky;
-	    	}
 	    }
-		.active, .heading {
-			color: @color-blue-sky;
-		}
 	    .active{
-	    	background-color: @color-blue-tone;
 	    	&::before {
 			    content: "";
 			    width: 4px;
 			    height: 42px;
-			    background-color: @color-blue-sky;
 			    position: absolute;
 			    left: -4px;
 			    top: 0;
@@ -424,12 +287,6 @@ label.card-title.required {
 				    width: 92%;
 				    border: 0;
 				}
-				// .input.file{
-		  //       	border-bottom: 1px solid black;
-	   //      	    margin-bottom: 13px;
-    // 				border-radius: .2rem;
-				//     height: 40px;
-				// }
 			}
 			.form-control {
 			    border: none;
@@ -473,6 +330,7 @@ label.card-title.required {
 		}
 	}
 }
+
 .alert {
 	position: absolute;
 	right: 20px;
@@ -482,6 +340,7 @@ label.card-title.required {
 	padding: 1rem 1.25rem .75rem 1.25rem;
 	.box-shadow(3px 6px 7px rgba(0,0,0,.2));
 }
+
 .alert-fix {
     position: initial;
     display: block;
@@ -490,28 +349,29 @@ label.card-title.required {
     padding: 10px;
     height: auto;
 }
+
 .alert-dismissible .close{
     padding: 2px 6px;
     top: -15px;
     font-size: 18px;
     right: -17px;
 }
-.has-error{
-	background-color: @color-red-light;
-}
+
 .icard {
 	margin-bottom: 10px;
 	padding-right: 0;
 }
+
 .icard-title {
 	font-family: @font-Ubuntu;
 }
+
 .icard-block {
-	background-color: @color-white;
 	padding: 10px;
 	overflow: hidden;
 	position: relative;
 }
+
 .icard-list {
 	&__simple {
 		.icard-item {
@@ -519,12 +379,12 @@ label.card-title.required {
 		}
 	}
 }
+
 .icard-item {
 	font-size: 14px;
 	max-height: 80px;
 	overflow: hidden;
 	font-family: @font-Ubuntu;
-	border-bottom: 1px solid @color-gray-soft;
     margin-bottom: 10px;
 	&:firs-child{
 		margin-top: 20px;
@@ -544,7 +404,6 @@ label.card-title.required {
 		&__icon {
 			font-size: 18px;
 			padding: 5px;
-			color: @color-gray;
 			display: inline-block;
 			margin-right: 4px;
 		}
@@ -557,12 +416,12 @@ label.card-title.required {
 		text-align: right;
 	}
 }
+
 .icard-filter{
 	margin-bottom: 20px;
 	.card-header {
 		padding-top: 18px;
 		padding-bottom: 0;
-		background-color: @color-white;
 		.caption {
 			text-transform: uppercase;
 		    font-weight: bold;
@@ -576,14 +435,12 @@ label.card-title.required {
 		    }
 		    .active{
 			    background: 0 0;
-			    border-bottom: 3px solid @color-blue;
 			    position: relative;
 			}
 			a{
 	    	    padding: 0 13px 13px;
 				font-size: 13px;
 				display: block;
-				color: @color-gray;
 				text-decoration: none;
 				.transition(0s);
 		    }
@@ -592,22 +449,12 @@ label.card-title.required {
 	}
 }
 
-.btn-action{
-	color: @color-green !important;
-	background-color: @color-white !important;
-	&:hover{
-		color: @color-blue-sky !important;
-	}
-}
-
-
 .data-grid-container {
 	padding: 0;
 	i[class*="icon-"] {
 		font-weight: bold;
 	}
 	.btn-group {
-		background-color: @color-white;
 		&__simple{
 			border-radius: .2rem;
 			a{
@@ -621,14 +468,11 @@ label.card-title.required {
 			left: inherit;
 			.dropdown-item {
 				padding: 3px 1rem;
-				color: @color-gray;
 			}
 		}
 	}
 	.card-header{
-		background-color: @color-blue-sky;
 		padding: .55rem 1.25rem;
-		color: @color-white;
 		margin: 0;
 		.box-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
 			i[class*="icon-"] {
@@ -669,21 +513,13 @@ label.card-title.required {
 		}
 		table{
 			.thead-default th {
-				color: @color-gray;
-				background-color: @color-white;
 				line-height: 26px;
 				position: relative;
 				a{
 					display: block;
-					color:#636c72;
 				}
 				&.header-action{
 					width: 160px;
-				}
-			}
-			tr{
-				&.has-error{
-					background-color: @color-red-light;
 				}
 			}
 			td{
@@ -691,9 +527,6 @@ label.card-title.required {
 				max-width: 400px;
 				min-width: 40px;
 				padding: 5px;
-				&.has-error, .has-error{
-					color: @color-red-dark;
-				}
 				&.icon-action{
 					text-align: center;
 					a.btn {
@@ -709,7 +542,6 @@ label.card-title.required {
 		}
 		.icon-order{
 			&::before{
-				color: @color-gray-light;
 				font-size: 9px;
 				font-family: @font-Icons;
 				content: '\e607';
@@ -718,7 +550,6 @@ label.card-title.required {
 				right: 7px;
 			}
 			&::after{
-				color: @color-gray-light;
 				font-size: 9px;
 				font-family: @font-Icons;
 				content: '\e604';
@@ -727,9 +558,6 @@ label.card-title.required {
 				right: 7px;
 			}
 			&__desc{
-				&::before{
-					color: @color-gray;
-				}
 				&::after{
 					content: '';
 				}
@@ -737,9 +565,6 @@ label.card-title.required {
 			&__asc{
 				&::before{
 					content: '';
-				}
-				&::after{
-					color: @color-gray;
 				}
 			}
 		}
@@ -759,45 +584,16 @@ label.card-title.required {
 #home {
 	.rapid-view {
 		margin-bottom: 10px;
-		.icard-title {
-			&__articles {
-				color: @color-green;
-			}
-			&__jobs{
-				color: @color-orange;
-			}
-			&__suscribers{
-				color: @color-blue-sky;
-			}
-			&__contact{
-				color: @color-purple;
-			}
-		}
 		.icard-block {
 			i {
 				position: absolute;
 				top: -16px;
 				right: -9px;
 				font-size: 4em;
-				color: @color-gray-soft;
 			}
 		}
 		.card-footer {
 			padding: 2px;		
-		}
-		.icard-footer {
-			&__articles {
-				background-color: @color-green;
-			}
-			&__jobs{
-				background-color: @color-orange;
-			}
-			&__suscribers{
-				background-color: @color-blue-sky;
-			}
-			&__contact{
-				background-color: @color-purple;
-			}
 		}
 	}
 	.home-grid {
@@ -824,7 +620,6 @@ label.card-title.required {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background-color: @color-blue;
 	opacity: 0.6;
 	position: absolute;
 	top: 0;
@@ -852,4 +647,3 @@ label.card-title.required {
 	-webkit-transform: scale(1.0);
 	}
 }
-

@@ -1,0 +1,225 @@
+@import "_color_sets";
+
+body {
+    color: @color-gray;
+    background-color: @color-gray-soft;
+}
+.btn-outline-info.disabled, .btn-outline-info:disabled {
+    color: @color-gray;
+    border-color: @color-gray;
+}
+.btn-primary{
+    background-color: @color-blue-soft;
+    border-color: @color-blue-soft;
+    &:hover{
+        background-color: @color-blue-light;
+        border-color: @color-blue-light;
+    }
+}
+.btn-action{
+    color: @color-green !important;
+    background-color: @color-white !important;
+    &:hover{
+        color: @color-blue-sky !important;
+    }
+}
+.card-block.focused {
+    background-color:  @color-gray-soft;
+}
+input.ng-invalid, select.ng-invalid, textarea.ng-invalid, .summernote.ng-invalid .note-editable.panel-body{
+    border-color: @color-red-dark !important;
+    background-color: @color-transparent-red !important;
+}
+.uib-datepicker-popup {
+    .text-info {
+        color: @color-white !important;
+    }
+}
+a { 
+    &:hover {
+        color: @color-blue-soft;
+    }
+}
+.message {
+    &::after{
+        background-color: @color-red-soft;
+        color: @color-white;
+    }
+}
+.error{
+    color: @color-red-dark;
+    background-color: @color-red-light;
+    border-color: @color-red-light;
+}
+.error-txt {
+    color: @color-red-dark;
+}
+.text-muted{
+    color: @color-gray-medium !important;
+}
+.breadcrumb{
+    background-color: transparent;
+    .active{
+        color: @color-gray-light;
+    }
+}
+.login{
+    background-color: @color-white;
+    border: 1px solid @color-blue-dark;
+}
+.top-bar{
+    background: @color-blue-dark;
+    border-bottom: 1px solid @color-blue-light;
+    a{
+        color: @color-gray-medium;
+        &:hover {
+            color: @color-blue;
+        }
+    }
+}
+.page-footer {
+    background: @color-gray-light;
+    color: @color-purple-soft;
+}
+.menu-principal {
+    background-color: @color-white;
+    .menu {
+        background-color: @color-white;
+        .nav-link {
+            color: @color-purple-soft;
+            &:hover{
+                background-color: @color-blue-tone;
+                color: @color-blue-sky;
+            }
+        }
+        .active, .heading {
+            color: @color-blue-sky;
+        }
+        .active{
+            background-color: @color-blue-tone;
+            &::before {
+                background-color: @color-blue-sky;
+            }
+        }
+    }
+}
+.has-error{
+    background-color: @color-red-light;
+}
+.icard-block {
+    background-color: @color-white;
+}
+.icard-item {
+    border-bottom: 1px solid @color-gray-soft;
+    .icard-info{
+        &__icon {
+            color: @color-gray;
+        }
+    }
+}
+.icard-filter{
+    .card-header {
+        background-color: @color-white;
+        .nav-tabs{
+            .active{
+                border-bottom: 3px solid @color-blue;
+            }
+            a{
+                color: @color-gray;
+            }
+        }
+    }
+}
+.data-grid-container {
+    .btn-group {
+        background-color: @color-white;
+        .dropdown-menu {
+            .dropdown-item {
+                color: @color-gray;
+            }
+        }
+    }
+    .card-header{
+        background-color: @color-blue-sky;
+        color: @color-white;
+    }
+    .data-grid {
+        table{
+            .thead-default th {
+                color: @color-gray;
+                background-color: @color-white;
+                a{
+                    color: @color-gray;
+                }
+            }
+            tr{
+                &.has-error{
+                    background-color: @color-red-light;
+                }
+            }
+            td{
+                &.has-error, .has-error{
+                    color: @color-red-dark;
+                }
+            }
+        }
+        .icon-order{
+            &::before{
+                color: @color-gray-light;
+            }
+            &::after{
+                color: @color-gray-light;
+            }
+            &__desc{
+                &::before{
+                    color: @color-gray;
+                }
+            }
+            &__asc{
+                &::after{
+                    color: @color-gray;
+                }
+            }
+        }
+    }
+}
+#home {
+    .rapid-view {
+        .icard-title {
+            &__articles {
+                color: @color-green;
+            }
+            &__jobs{
+                color: @color-orange;
+            }
+            &__suscribers{
+                color: @color-blue-sky;
+            }
+            &__contact{
+                color: @color-purple;
+            }
+        }
+        .icard-block {
+            i {
+                color: @color-gray-soft;
+            }
+        }
+        .icard-footer {
+            &__articles {
+                background-color: @color-green;
+            }
+            &__jobs{
+                background-color: @color-orange;
+            }
+            &__suscribers{
+                background-color: @color-blue-sky;
+            }
+            &__contact{
+                background-color: @color-purple;
+            }
+        }
+    }
+}
+.double-bounce1, .double-bounce2 {
+    background-color: @color-blue-sky;
+}

@@ -28,6 +28,7 @@ $cakeDescription = 'Content Manager';
 
     <?= $this->Html->css('http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css') ?>
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css') ?>
+    <?= $this->Html->css('color-set-default.css') ?>
     <?= $this->Html->css('admin.css') ?>
 
     <?= $this->Html->script('https://code.jquery.com/jquery-3.1.1.slim.min.js') ?>
